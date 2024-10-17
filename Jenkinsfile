@@ -57,5 +57,5 @@ pipeline {
                 bat "docker run --network my-network -p 8222:8222 -d --name gateway-sr gateway-sr "
             }
         }
-    }
+    }//nice
 }
