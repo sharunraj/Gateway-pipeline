@@ -54,7 +54,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 bat "docker build -t gateway-sr ."
-                bat "docker run --network my-network -p 8761:8761 -d --name gateway-sr gateway-sr "
+                bat "docker run --network my-network -p 8222:8222 -d --name gateway-sr gateway-sr "
             }
         }
     }
